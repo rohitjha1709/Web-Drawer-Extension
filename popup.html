@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Webpage Drawer</title>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="popup.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <h3>Webpage Drawer</h3>
+  <div class="section">
+    <h4>Drawing Tools</h4>
+    <div class="btn-group">
+      <button id="penButton">Draw</button>
+      <button id="eraserButton">Erase</button>
+      <button id="shapeButton">Shape</button>
+    </div>
+  </div>
+  <div id="shapeSection" class="section hidden">
+    <h4>Shape Tools</h4>
+    <div class="btn-group">
+      <button id="circleButton">Circle</button>
+      <button id="rectangleButton">Rectangle</button>
+      <button id="arrowButton">Arrow</button>
+    </div>
+  </div>
+  <div class="section">
+    <h4>Highlighter Tool</h4>
+    <div class="btn-group">
+      <button id="highlighterButton">Highlighter</button>
+    </div>
+  </div>
+  <div class="section">
+    <h4>Actions</h4>
+    <div class="btn-group">
+      <button id="saveButton">Save</button>
+      <button id="clearButton">Clear</button>
+    </div>
+  </div>
+  <div id="sec2">
+    <div class="color-picker-container">
+      <span class="color-picker-label">Color:</span>
+      <input type="color" id="colorPicker">
+    </div>
+    <div class="toggle-container">
+      <input type="checkbox" id="toggleButton">
+      <label for="toggleButton">Enable</label>
+    </div>
+  </div>
+  <p id="info">
+    <i class="fa-solid fa-circle-info"></i> Won't work on "chrome:/" pages. <br>
+    <i class="fa-solid fa-circle-info"></i> Check Enable to start Drawing. <br>
+    <i class="fa-solid fa-circle-info"></i> Refresh to activate Webpage.
+  </p>
+</body>
+</html>
+
